@@ -1,0 +1,358 @@
+
+
+ - Java Developer
+
+Experience With
+
+Java (8)
+Spring Boot
+Hibernate
+Rest Api
+Indispensable: English Intermediate - advanced
+
+ Java EE applications
+Exposure to popular Java frameworks like JSF and Spring MVC
+Object-Oriented Design (OOD)
+understanding of system integration and testing throughout the software development life cycle (SDLC)
+
+J2EE, Web Services, REST, XML, JSON;
+Knowledge of Git and/or Maven.
+ Apache Maven, XML, Jakarta EE, FileNet e Git
+ 
+ (preferably Oracle or MS SQL)
+ 
+ Design Patterns
+ 
+  SOLID principles
+  Vue, React, or Oracle JET
+  
+  Software testing 
+  g. JUnit) and tools (e.g Selenium)
+  
+  Experience in continuous integration
+  
+   DeployHQ
+   
+   Develop Looms, SOPs, and instructional live walkthroughs of platforms to assist both
+
+clients and internal team members with various processes and new platforms
+
+ desenho de arquitetura;
+Experiência com design patterns e SOLID;
+RESTful
+ NoSQL
+ Docker(Dockerfile, docker-compose, container, imagem, swarm)
+Estratégias de Cache
+desenvolvimento orientado a testes
+serviços síncronos e assíncronos
+Conhecimento dos riscos comuns de segurança (OWASP);
+Design e desenvolvimento de micro serviços horizontalmente escaláveis;
+Experiência em soluções Cloud (ex: AWS);
+Jobs de alto desempenho e comunicação entre serviços utilizando soluções de fila como Beanstalk, RabbitMQ, Kafka e etc;
+Estratégia de monitoramento.
+
+
+Responsibilities:
+
+Write and optimize T-SQL stored procedures
+Handle common database tasks
+Monitor server metrics, optimize performance as needed
+Collaborate with Lead Database Developer
+Maintain documentation
+
+Knowledge, Skills and Abilities:
+
+Experience with T-SQL, DDL, DML
+Experience working with relational databases
+Experience with optimizing SQL statements and procedures
+Experience troubleshooting database performance issues
+Experience with Git-based source code management tools
+
+Experience
+
+Two or more years of professional experience with SQL Server
+
+Our Robert Half client currently utilizes PeopleSoft as their ERP platform. They are looking for a Database Developer consultant that can come in and reverse engineer/ and understand how data is being imported into PeopleSoft, as well as experience with technical writing /documentation .
+
+
+They need someone that understands the ruling of data in PeopleSoft. How did the mainframe “code” the data, how was it built? Would need to commission GL file from mainframe. A candidate that is a strong DBA and that can document the instance, would be an ideal candidate.
+
+
+They currently have 49 interfaces across 17 systems. The systems include internally built systems, as well as Life Pro. Those would be the main systems you would need to navigate.
+
+
+Their database is PL/SQL .
+
+2+ years of development experience using Java in a J2EE environment
+Experience in Java and Spring Boot framework
+Working knowledge of Git, Eclipse/IntelliJ
+Experience with Maven and/or Gradle
+
+PHP 7.4 e superior
+
+Conhecimento de PSR 2, 4 e 12
+
+Laravel
+
+HTML5
+
+CSS
+
+JavaScript/TypeScript
+
+Bootstrap
+
+Git
+
+API REST
+
+Docker
+
+
+Banco de dados:
+
+Oracle
+
+PostgreSQL
+
+
+Diferencial:
+
+Princípios SOLID
+
+Vue, React, Angular ou Flutter
+
+Gitlab
+
+Nexus
+
+SonarQube
+
+Linux
+
+We're looking for someone who excels when working across the entire stack, and as a bonus is well versed in a backend framework like Laravel. Our team has a "builder first" mentality that gets carried throughout every part of the business. We certainly don't understand everything, and we're looking for people with the curiosity to dive deep and problem solve. Our ideal candidate would meet the following requirements:
+
+Experience with Laravel/PHP
+Basic language features are mastered, but some advanced structures may still be unfamiliar
+Comfortable in a small team/fast-moving environment
+Understanding of the "full-stack" and how pieces fit together
+Familiarity with basic front-end solutions like HTML, TaildwindCSS, and VueJS
+We do not expect you to be an expert on all of these, but you should have strong experience working with PHP and Laravel. This is a full-time position and is fully remote. The majority of our team is based in the Uni
+- 5+ Years of experience with PHP.
+
+- 5+ Years of experience with Laravel.
+
+- 4+ Years of experience working with MongoDB.
+
+- 3+ Years of experience working with AWS.
+
+- Understanding and application of solid principles of software design.
+
+- Detail-oriented, professional, and positive work attitude.
+
+- Advanced English level.
+
+Do you have what it takes?
+
++7 years of back-end development experience for large scale web applications
+
+Be able to design and communicate external and internal architectural perspectives of well-encapsulated systems (e.g. Service Oriented Architecture, Docker-based Services, micro-services)
+
+Prior experience with building and operating distributed web application systems while embracing the discipline of Site Reliability Engineering
+
+Strong skills in API and Data Model Design and Implementation including how to scale out, make highly available, and map to storage systems
+
+Ability to design and implement a layered application architecture that can be easily changed to accommodate evolving business requirements.
+
+Can-do and will-do attitude.
+
+English: Advanced level.
+
+Qualifications:
+Experience with highly concurrent languages such as GoLang, Erlang or Scala
+Experience with deployment systems (e.g. GitHub Actions, AWS CodeDeploy)
+Experience with highly concurrent languages such as React, Javascript, HTML and CSS
+Familiarity with AWS Services (e.g. RDS, Lambda, EC2, et cetera)
+Familiarity with the Linux Operating System and command-line tools
+Understanding of OO design, algorithms, and data structures
+Aptitude to quickly learn new languages and technologies as necessary
+Computer Science or related degree preferred
+Fluent in English
+
+Principais responsabilidades:
+
+• Ecosistema Spring(Springboot, SpringData, SpringSecurity.. etc);
+
+• React;
+
+• Utilização de Banco de Dados Oracle;
+
+• Sistemas Operacionais Windows e Linux;
+
+• Desenvolver WebServices/API's em Rest;
+
+• Utilização de dockers e containers;
+
+• Desenvolvimento de Testes unitários com Cypress, Junit e Mockito;
+
+• Utilização do GitLab, Bitbucket, HG e do HG Flow para versionamento dos fontes;
+
+• Trabalhar com frameworks ageis como Scrum, Kanban;
+
+
+Desejável e será diferencial:
+
+Experiencia em Devops; •
+
+Experiencia com soluções de autenticação e tokenização (Exemplo: KeyCloak);
+
+• Experiencia com ferramentas de segurança de código como Fortify, Webinspect e Voltage;
+
+• Experiencia com Splunk;
+
+• Experiencia com Sonar e ferramentas de revisão de código
+
+2 to 4 years of experience in software and web development.
+Java knowledge/experience:
+Develop, test and deploy Java-based web and enterprise applications.
+Understand and implement design patterns such as MVC and Singleton.
+Understand and use advanced features of Java, such as generics and annotations.
+Understand and use popular Java frameworks such as Spring, Hibernate, and Struts.
+Write and maintain unit tests using JUnit or similar frameworks.
+Understand and use application servers such as Tomcat or JBoss.
+Understand and use Agile software development methodologies and practices.
+Understand and use best practices for performance optimization and scalability.
+Good understanding on Spring Boot Auto Configuration, Spring Beans concepts, Spring testing and Spring MVC.
+Work in a team environment and participate in code reviews.
+Setup projects from scratch with minimal support.
+Document code effectively.
+Understand and use web services and APIs, such as REST or SOAP.
+Understand and use front-end technologies such as JavaScript, HTML, and CSS.
+Understand and use messaging systems like ActiveMQ, RabbitMQ or Apache Kafka.
+SQL and database management systems experience, be able to understand and create the previous plus Table Design, Foreign keys.
+Basic understanding on NoSQL management systems (MongoDB)
+Understanding and some experience on cloud platforms such as AWS, Azure GCP.
+Experience on containers related projects.
+Have basic DevOps knowledge and able to make minor changes.
+Deployment pipelines experience.
+Executes Projects/assignments with minimal supervision and support lower levels
+Computer Science Degree or similar required.
+Desirable Certifications: Oracle Certified Professional, Java SE 8 Programmer.
+Strong communication and collaboration skills to partner effectively with teams throughout the organization.
+
+6+ years of experience as a Full Stack software engineer building modern web applications.
+3+ years experience with Ruby on Rails and ReactJS
+Strong skills needed in: Javascript, ES6, TypeScript, Git
+Experience with SQL and RDBMS (PostgreSQL preferred) and data warehousing solutions.
+Previous experience building GraphQL or REST APIs (preferably experience with GraphQL in a production environment)
+Excellent understanding of relational databases (preferably PostgresSQL), be comfortable designing robust data schemas and solving performance issues
+Solid software engineering practices (e.g., coding, testing, code reviews, design documentation).
+B.S. or higher in Computer Science (or equivalent work experience)
+
+O que buscamos:
+
+
+Profissional que será responsável por:
+
+Implementação de novas funcionalidades nos produtos da empresa;
+
+Análise e Correção de bugs encontrados;
+
+Revisão de código de outros desenvolvedores do time;
+
+
+
+🎯 Conhecimentos necessários para mandar bem:
+
+
+Experiência em Solução de problemas;
+
+Desenvolvimento Java Backend;
+
+Spring Framework / Spring Boot;
+
+Desenvolvimento de APIs REST;
+
+Banco de Dados SQL (MySQL);
+
+Git;
+
+As a software engineer at ReMatter, you will:
+
+create exciting new features and products, primarily using Node.js, React, and AWS. This would include, our backend API server, front-end UI, our mobile apps (React Native), and everything in-between
+write internal documentation, create thorough test cases, and communicate engineering decisions you made to the rest of the team
+own problems end-to-end, thinking through everything from user experience, data models, scalability, operability, and ongoing metrics
+understand how to deploy the projects you work on to production
+stitch many different services and processes together, even if you have not worked with them before
+build the culture of the company from the ground up alongside the founders and other early team members
+uphold our high engineering standards and bring consistency to the codebases, infrastructure, and processes you will encounter
+Competencies
+
+This role requires:
+
+experience in building large-scale database-backed web applications
+excellent written and verbal communication skills and ability to articulate technical concepts clearly and succinctly
+knowledge in parts of our stack is listed below. If you have experience in these, great! We can get started that much faster. If not, no worries! A hallmark of a great engineer is picking up new technologies quickly:
+We most frequently work with TypeScript, React, Node, and GraphQL. We run on AWS, and most often deal with Lambda, Cognito, S3, & RDS. We have a robust CI/CD system on GitHub Actions & Docker.
+
+Requirements:
+
+4+ years of Experience with Angular or React;
+4+ years of practical experience with C#, .NET Framework e .NET Core;
+Strong knowledge of Git;
+Knowledge in Azure DevOps;
+Experience working with Agile Methodologies;
+Advanced or Fluent English is a MUST.
+
+At least five years of software development experience working with engineering teams on developing and shipping complex software projects. Strong preference for a background in Ruby and/or Ruby on Rails.
+Strong familiarity with Software Development Life Cycle (SDLC) and Agile methodologies.
+Ability to prioritize tasks, manage time effectively, and adapt to changing priorities.
+This role can be remote anywhere in Canada.
+
+
+Candidates will be expected to:
+
+Build and manage enterprise grade applications using Java 11+.
+Strong background (5+ years) in designing, building, and maintaining APIs, services, and systems.
+Highly proficient with relational database and Big Data technologies including MySQL, Elasticsearch, and Cassandra.
+Highly proficient with Linux
+Have experience working within a microservice architecture and have experience with docker containers.
+Have experience with Javascript, HTML, and CSS.
+Debug production issues across services and multiple levels of the stack.
+Work with engineers across the company to build new features at large-scale.
+Hold yourself and others to a high bar when working with production systems.
+Take pride in working on projects to successful completion involving a wide variety of technologies and systems.
+Thrive in a collaborative environment involving different stakeholders and subject matter experts.
+Our ideal candidate will be ideally located near Royal Oak, Michigan, but we’re happy to bring on strong, remote candidates as well.
+
+Qualifications
+
+Master’s or Bachelor’s degree in Computer Science or equivalent experience, with strong fundamentals and problem solving skills.
+6+ years experience in software development roles
+Expert knowledge and capabilities in Java 8+ development, Spring, REST microservices, Java Application Servers, HTML / CSS.
+Strong knowledge of JavaScript technologies such as Angular and Node.js
+Experience with unit testing frameworks such as JUnit, Mockito, Jasmine.
+Experience with SQL and relational database design.
+
+Basic Qualifications
+
+2+ years of hands on software development in any of these languages: Java/Scala/Go
+BS in Computer Science, or equivalent
+Strong OO methodology and design patterns
+Fluent communication skills in verbal and written English
+Experience working on at least two areas: large-scale distributed application development, machine learning, Unix/Linux environments, and deep-dive root-cause problem analysis.
+
+Preferred Qualifications
+
+Masters or further education or similar experience in any related computer science or engineering field
+2+ years of hands-on experience with two or more general purpose OO programming languages including but not limited to: Java/Scala/Go
+Interest and ability to learn other coding languages as required
+Strong Analytical skills
+
+
+We're looking for:
+A pro with Ruby on Rails. You'll be working on the backend of the application, so you know your way around Ruby on Rails, backend performance, and application architecture.
+A self starter. We are a fully distributed team so you're comfortable managing your own time and working independently.
+A problem solver. Working at the scale that we do, we need an engineer who loves working with their team to determine smart solutions for our users.
+A solid teammate. Whether it be in code reviews, pair programming or just chatting with your colleagues, the desire to help your team be better and stronger is a driving factor at Dribbble.
+A thorough tester. With the amount of traffic our site gets, testing is a requirement, not a nice to have. Our ideal candidate will be comfortable in writing tests for their features, and understanding that we never push to production without passing tests.
