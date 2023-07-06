@@ -1,0 +1,11 @@
+This software will perform as a digital marketplace where people can Sell and Buy, Donate and Request and Exchange Items.
+
+It must use at least 70% of technical requirements gathered on the "tech_requirements_summary" doc:
+As
+ - Java
+ - Microsservices
+ - SOLID principles
+ - Architectural principles
+ - React
+ - Microsservices
+ - etc
