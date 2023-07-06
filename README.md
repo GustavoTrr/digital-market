@@ -1,7 +1,7 @@
 # digital-market
 Software Development Study Project
 
-In this project, my main goal is to develop a web-based Digital Market while studying and sharing various concepts and strategies related to the software development lifecycle that are widely used in projects in 2023.
+In this project, my main goal is to develop a web-based Digital Market while studying and sharing various concepts and strategies related to best practices in the software development lifecycle that are widely used in projects in 2023. The project will encompass everything from gathering business goals and requirements, to documentation, architectural definitions, implementation, testing, and ultimately launching the application from scratch.
 
 The first step of this project involves gathering the requirements and specifications that are commonly mentioned in job descriptions from around the world. By analyzing these requirements, I aim to organize and summarize them effectively.
 
