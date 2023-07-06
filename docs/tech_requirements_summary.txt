@@ -1,0 +1,78 @@
+
+
+					RELATÓRIO ORGANIZADO PELO CHATGPT
+					
+					
+Java Developer:
+
+Java (8) - 5 points
+Spring Boot - 5 points
+Hibernate - 4 points
+Rest Api - 4 points
+Java EE applications - 3 points
+JSF and Spring MVC - 3 points
+Object-Oriented Design (OOD) - 4 points
+System integration and testing (SDLC) - 4 points
+J2EE, Web Services, REST, XML, JSON - 4 points
+Git and/or Maven - 4 points
+Apache Maven, XML, Jakarta EE, FileNet, Git - 3 points
+Oracle or MS SQL - 3 points
+Design Patterns - 4 points
+SOLID principles - 4 points
+Vue, React, Oracle JET - 3 points
+Software testing (JUnit, Selenium) - 4 points
+Experience in continuous integration - 3 points
+DeployHQ - 3 points
+Architecture design - 4 points
+Experience with NoSQL databases - 3 points
+Docker - 4 points
+Cache strategies - 3 points
+Test-driven development - 4 points
+Knowledge of common security risks (OWASP) - 3 points
+Cloud solutions (AWS) - 4 points
+High-performance jobs and communication between services using queue solutions - 4 points
+Monitoring strategy - 3 points
+Database Developer:
+
+T-SQL, DDL, DML - 4 points
+Relational databases - 4 points
+Optimizing SQL statements and procedures - 4 points
+Troubleshooting database performance - 4 points
+Git-based source code management - 4 points
+PeopleSoft ERP - 4 points
+PL/SQL - 4 points
+Experience with SQL Server - 4 points
+Technical writing/documentation - 4 points
+PHP Developer:
+
+PHP 7.4+ - 4 points
+PSR 2, 4, 12 - 3 points
+Laravel - 4 points
+HTML5 - 3 points
+CSS - 3 points
+JavaScript/TypeScript - 3 points
+Bootstrap - 3 points
+Git - 3 points
+RESTful API - 4 points
+Docker - 4 points
+Oracle, PostgreSQL - 3 points
+Vue, React, Angular, or Flutter - 3 points
+Gitlab, Nexus, SonarQube - 3 points
+Linux - 3 points
+Full Stack Developer:
+
+Laravel/PHP - 4 points
+HTML - 3 points
+TailwindCSS - 3 points
+VueJS - 3 points
+MongoDB - 4 points
+AWS - 4 points
+Solid principles of software design - 4 points
+Advanced English level - 4 points
+Backend Developer:
+
+Java 11+ - 5 points
+API and Data Model Design and Implementation - 5 points
+Microservices, Docker - 5 points
+Relational databases (MySQL, Elasticsearch, Cassandra) - 4 points
+Linux - 4 points
