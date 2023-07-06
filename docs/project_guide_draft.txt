@@ -9,3 +9,65 @@ As
  - React
  - Microsservices
  - etc
+
+
+Each day I will try to study one or more topic:
+
+	- Architecture:
+		- What is software architecture (vs solution architecture), etc.
+		- Clean Architecture, Onion Architecture, Hexagonal Architecture, Microservices, Domain-Driven Design (DDD), Architecture design.
+	- Software Design:
+		- Design Patterns.
+		- SOLID, DRY, Object-Oriented Design (OOD), Test-Driven Development (TDD), Behavior-Driven Development (BDD).
+	- Microservices Project Details:
+		- Key topics related to microservices (I have this noted from a WhatsApp class).
+		- System integration.
+		- SSO / OAuth / JWT.
+		- Authentication and authorization methods, including ACL in various environments, including microservices.
+		- REST vs GraphQL vs gRPC vs SOAP.
+		- Communication and messaging.
+		- Resilience.
+		- Knowledge of common security risks (OWASP).
+		- High-performance jobs and communication between services using queue solutions.
+		- Monitoring strategy.
+		- Cache strategies.
+	- Database:
+		- Key SQL databases and their main differences.
+		- NoSQL: how each type works and where to use them.
+	- Documentation:
+		- Research software documentation requirements in the international market.
+		- Requirements documentation.
+		- How we will do it: deciding the architecture and documenting using some architectural design tool.
+	- Setting up the Environment:
+		- Setting up a Docker environment.
+		- Trying to use AWS Lambda.
+		- Trying to use various AWS resources.
+		- Setting up a minimal structure, basic "Hello World" application.
+	- Setting up Development Pipelines and Workflows:
+		- Studying Git development workflows.
+		- Experience in continuous integration.
+			- DeployHQ.
+			- Jenkins.
+			- GitLab or GitHub Actions.
+			- Kubernetes / Rancher / AWS.
+		- SonarQube.
+		- TDD and Automated Testing.
+	- Implementation:
+		- Java:
+			- In summary: What it is, how it started, how it works, version definitions vs. implementations.
+			- Core.
+			- Spring, Spring Boot.
+			- Hibernate.
+			- Java EE applications.
+			- JSF and Spring MVC.
+			- J2EE.
+			- Apache Maven, Jakarta EE.
+			- Java SE.
+			- Generics and annotations.
+			- Automated Testing.
+			- Runtime and compilation exceptions.
+		- ReactJS:
+			- Key points.
+			- State management.
+			- Best practices.
+			- Automated Testing.
