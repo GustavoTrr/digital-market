@@ -71,3 +71,9 @@ Each day I will try to study one or more topic:
 			- State management.
 			- Best practices.
 			- Automated Testing.
+	- Build and Deploy:
+		- Strategies
+		- Best practices (front-end / back-end)
+	- Quality Assurance
+		- Test Pyramid
+		- Best practices
