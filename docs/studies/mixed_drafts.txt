@@ -1,0 +1,331 @@
+mixed_drafts.txt
+
+https://www.researchgate.net/publication/221553844_Architecture_Design_Implementation
+https://www.studocu.com/es/document/universidad-de-cadiz/programacion-no-lineal-y-computacion-cientifica/icse03-desarrollo-de-software/39058042
+
+
+Architecture is concerned with the selection of architectural elements, their interaction, and the constraints
+on those elements and their interactions
+
+Software Architecture is “concerned with issues ... beyond the algorithms and data structures of the computation
+
+
+Concerned with more abstract elements of the software then the implementation, code, algorithims, etc
+Higher level of abstraction
+externally visible properties of software “components.”
+
+But the amount of
+detail alone is insufficient to characterize the differences
+
+Confusion:
+“Siemens” catalogue defines “architectural patterns” that are in par with “design patterns” defined by the “Gang of Four” 
+
+same specification language for both architectural and design
+
+SEI = classifies UML [3] as an architectural description language, but it was created to provide detailed design decisions
+
+An example that show it cannot be distinguished just by the granularity of details: class diagrams, are design phase tool, but it can contain 
+such level of detail that allow some tools to write the code by that
+
+intension/locality thesis
+(i) Architectural specifications are intensional and
+non-local;
+(ii) Design specifications are intensional but local;
+and
+(iii) Implementation specifications are both extensional and local.
+
+
+
+========================================
+
+Achitectural styles and types:
+
+	Clean architecture 
+		Enterprise application patterns Martin Flower
+
+	Domain Driven Design
+		Erick Evans
+
+	Arquitetura hexagonal
+		Alister kobern
+		
+	MVC
+	
+	DDD
+	
+	Monolithic application
+	
+	Microsservices
+	
+	Component-based
+	
+	
+	SOA 
+	Pipes and filters
+	Cliente servidor
+	Componentes
+	
+	Hexagonal Architecture (a.k.a. Ports and Adapters) by Alistair Cockburn and adopted by Steve Freeman, and Nat Pryce in their wonderful book Growing Object Oriented Software
+	Onion Architecture by Jeffrey Palermo
+	Screaming Architecture from a blog of mine last year
+	DCI from James Coplien, and Trygve Reenskaug.
+	BCE by Ivar Jacobson from his book Object Oriented Software Engineering: A Use-Case Driven Approach
+	
+	Clean architecture 
+Enterprise application patterns Martin Flower
+
+Domain Driven Design
+Erick Evans
+
+Arquitetura hexagonal
+Alister kobern
+	
+-----------------------------------------
+
+This study needs to answer these questions below:
+	- What is software architecture?
+	- What is the importance/main goal of it ?
+	- What are the styles/types ?
+	- Main parts/characteristics of software archtecture
+	
+	
+	
+
+Design Pattern "Specification Pattern"
+	https://youtu.be/dCdOG_RZpxU
+	https://www.youtube.com/watch?v=sOhfmL291h0
+	
+	
+Clean Architecture:
+	https://youtu.be/ONj4zvLtmpA
+	https://youtu.be/wN0HPtL8Z9Y
+DDD + Clean Architecture
+	https://youtu.be/cZuyPPrRGAw
+
+Software architecture "what is"
+  https://youtu.be/HB7ExcOZmXc - part 1
+  https://youtu.be/BwwD5v1yDz0 - part 2
+The code is text
+Thousands of lines of code
+Archtecture will determine the best way to devide and organize the structure of this code into sections or segments and how these sections should communicate
+
+Software is virtual, intangible
+Representação arquitetural.
+Desenhos, diagramas
+UML , SYSML ou texto
+
+ISO42010
+
+Na tentativa de modularizar os sistemas, surgem os padrões arquiteturais, Como Em camadas, comum em SO MVC, etc
+
+SOA 
+Pipes and filters
+Cliente servidor
+Componentes
+
+Foco nos atributos de qualidade
+Arquitetura deve satisfazer os atributos de qualidade
+Livro: Software arquitecture In Practice: propriedades mensurável e testavel do sistema = atributos de qualidade
+Indicador de qualidade
+
+Exemplo:
+
+Desempenho,
+Segurança,
+Usabilidade,
+Manutenabilidade
+
+Mensuráveis>> métricas >> pontuação
+
+ISO25010
+
+What is a quality attribute
+	https://youtu.be/xS4jB-BBCkI
+	
+Ao projetar:
+
+Ao dividir um software em pedaços: Princípio de separação de interesses,
+
+Alta coesão e baixo acoplamento
+
+
+Resumindo os vídeos:
+	O foco da arquitetura é
+	componentizar o software
+	dividindo em partes
+	buscando entender qual deve ser a melhor estrutura dele em relação a:
+		- como dividir estas partes
+		- como as partes vão se comunicar
+		- como vão ser executadas
+		*tudo isso usando padrões 
+		Mas sempre buscando atender aos atributos de qualidade do software, que é o que consegue ser mensurado ao final
+		
+	Foco do arquiteto de software é estruturar o software de maneira a atende os atributos de qualidade
+	
+	
+O que é arquitetura de software?
+	https://youtu.be/Xt66rPTAWMs
+	Software é algo vivo, vai mudando conforme o tempo.
+	E é caro! As empresas geralmente mensuram o quanto vão ganhar implementando o software.
+	Mansuracoes e relação custo benefício
+	Se o software tiver que ser refeito antes de se pagar para a empresa a empresa fez um péssimo negócio
+	Foco no que vai interessar para o negócio! Foco na solução E otimização
+	Arquitetura é entender os atributos do negócio, entender as limitações que o negócio tem, entender limitações técnicas tmb e de recursos, para trazer o melhor software com o menor custo
+	Sabendo quais são as ferramentas ou recursos disponíveis
+	
+	Hoje em dia, o papel do arquiteto de software no sentido de crachá, como cargo, de persona, está mudando.
+
+	As empresas estão adotando um modelo com o setor de arquitetura , (e que geralmente envolve muito DevOps) que ajuda em todos os projetos. e a arquitetura daquele software específico daquele time geralmente fica distribuído entre os desenvolvedores e o techlead
+	
+https://youtu.be/0NfqX1RFkBg
+https://engsoftmoderna.info/artigos/arquitetura-hexagonal.html#:~:text=Uma%20Arquitetura%20Hexagonal%20divide%20as,tais%20como%20bancos%20de%20dados
+
+Arquitetura hexagonal
+	Pra se ver livre de dependências do framework.
+	Aplicando specifications, interfaces e IoC e DI
+	
+	Arquitetura hexagonal ou porta and adapters tem como premissa e objetivo central o desacoplamento entre a camada de domínio e as dependências externas. Separando o que é camada de domínio em um hexágono interno circundado de portas que se comunicarão com o mundo externo através de interfaces.
+	O motivo de ser hexagonal é justamente pq cada face representa a conexão com um recurso externo
+	Em 2005, Cockburn tentou renomear o nome de sua arquitetura para Arquitetura baseada em Portas e Adaptadores, com a seguinte justificativa:
+
+	Eu finalmente tive esse momento aha! (junho de 2005) no qual vi que as faces do hexágono [interno] são portas… e os objetos entre os dois hexágonos são adaptadores e, portanto, o padrão arquitetural consiste em uma Arquitetura Baseada em Portas e Adaptadores. Esse nome admite uma explicação melhor do que aquela que eu propus com o nome Arquitetura Hexagonal.
+
+	No entanto, a tentativa de renomeação não deu tão certo e a arquitetura, provavelmente, continua sendo mais conhecida como Arquitetura Hexagonal.
+	
+	Isolar o coração do sistema (regra de negócio, domínio da aplicação) do mundo externo
+	Isolar o coração do sistema (regra de negócio, domínio da aplicação) do mundo externo
+	Lado esquerdo entradas
+	Lado direito saídas
+	
+	https://replit.com/@engsoftmoderna/ExemploArquiteturaHexagonal
+	
+	A clean architecture usa conceitos da arquitetura hexagonal, no sentido de isolar o coração do negócio do mundo externo 
+	Onion style tmb deriva da arquitetura hexagonal
+	
+	https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
+	
+	
+	
+https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
+
+
+
+https://youtu.be/5wBw9rvi-WM
+
+TDD 
+
+
+	Não é simplesmente criar testes, mas sim, criar antes de criar o código, pra guiar  a implementação pelos testes
+
+	TDD
+
+	Metodologia de criar casos de teste antes de implementar o código.
+
+	Benefícios: amadurecer melhor as funcionalidades antes de implementa-las
+
+	Negativo: tem casos que só vai aparecer durante a implementação. Deixa o desenvolvimento mais lento no início até pegar o jeito
+
+SSR - Server Side Rendering
+
+Principalmente para SPA
+
+Resolve o problema de SEO search engine optimization
+
+Veio pra ficar
+
+Deployment strategy Blue Green:
+
+Ao subir nova versão da aplicação, sobe em novo ambiente separado, faz os testes e estando tudo ok, faz o redirecionamento. Isso deixa mais rápido a transição e os rollback caso necessário
+
+Flutter
+	https://youtu.be/l2r-g-1g2-g
+	https://youtu.be/NAmPtlcuGM0
+	https://youtu.be/FHII84t4MyM
+
+https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/deployment-methods.html
+https://youtube.com/shorts/0kUxGQL_IxA?feature=share
+https://www.youtube.com/live/FgeqYkqMqcw?feature=share
+
+	Desenhando sistemas:
+
+	Calcular Requests per minute RPM
+
+	Calcular espaço de armazenamento calculando o espaço de cada registro e a estimativa de quantos registros haverão por período
+
+	RDBMS => ACID
+
+	Calcular e otimizar os custos para a empresa manter o sistema.
+
+	DB auditoria. Como usar ? Qual é melhor? Etc
+
+	Index da tabela do banco de dados. Como funciona? Que custo que tem?
+
+	Observability
+
+	APM = Application Performance Monitor
+
+	Gratuitos:
+	Elastic stack
+
+	Paid:
+	Datadog
+	NewRelic
+
+	LGPD
+
+	O sistema já deve nascer seguro.
+
+Secret Manager:
+
+Gerenciador de passwords e tokens da aplicação
+
+Política de espurgo de dados
+
+
+Quality and tests:
+	Tecnical Debit = Débito técnico: Quanto tempo leva para corrigir todas as falhas do sistema
+	Sonar
+	Testes de contrato da API
+
+
+Diferença entre Arquitetura de Solução e Arquitetura de Software
+https://youtu.be/mzn_CNomDwc
+	Arquiteto de solução:
+		- Fica entre a área de negócio e a equipe de software.
+		- Vai desenhar qual será a melhor solução para aquelas regras de negócio
+		- usa: diagramas C4, UML, levantamento de processos BPMN
+		Análise dos impactos comerciais das escolhas tecnológicas
+		Analisando custos e impactos  que aquela solução vai ter para o negócio
+	Arquitetura de Software:
+		Faz parte da disciplina de engenharia de software
+		Relacionada ao processo de criação a entrega do software
+		Tá mais ligada ao código e a como cada componente de software está ligada entre si
+		Muitas vezes é o papel desempenhado por um tech lead ou dev sênior
+
+Time de desenvolvimento de software
+	HJ:
+		Analista de requisitos
+		Arquiteto
+		desenvolvedores
+		Pessoal da infra
+		Devops
+	Minha previsão é que :
+		Um pessoal vai misturar Infra e devops: ficando mais com a parte de hardware e configurações, protocolos de acessos, liberações, aquisições de serviços externos
+		Outra: arquiteto de soluções: quem vai desenhar o software
+		Talvez tenha mais uma: O analista de requisitos/ analista de fluxos que é quem vai acompanhar os fluxos e mudanças de fluxos, tela, detalhes.. não mexendo com código, mas abastrações, desenhos, etc
+
+
+
+	Analisando custos e impactos  que aquela solução vai ter para o negócio
+
+
+
+	Serviços para automação de build e deploy:
+
+GCP (Google cloud build)
+
+Jenkins
+
+GitHub actions
+
+Amazon cidebuild

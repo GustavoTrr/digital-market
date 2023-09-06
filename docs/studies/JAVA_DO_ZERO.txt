@@ -1,0 +1,208 @@
+Aprendizados sobre Docker e Java:
+ Docker:
+ 
+ docker alpine (SO)
+ 
+ rodei: docker run -it -v C:/Users/MEC/projetos/automatedtests/selenium:/home alpine
+ 
+ fiz tudo dentro dele:
+ 
+ rodei apk update
+ apk upgrade
+ apk add openjdk11 tzdata curl git zip unzip bash
+ 
+ java --version
+ 
+ Java:
+  - Peguei um SO (como alpine) zerado
+  - Instalei o JDK11
+  - Criei uma classe Teste.java
+  - compilei com javac Teste.java
+  *ele gerou Teste.class
+  - tentei rodar, porém deu erro: Error: Could not find or load main class .home.Teste.class
+Caused by: java.lang.ClassNotFoundException: /home/Teste/class
+
+ - Isto é pq ao tentar executar de fora do diretório em que etão as classes, deve se passar o parâmetro -cp (ClassPath)
+ O ClassPath define o local onde o java procurará os arquivos necessários para a execução, como .class, de propriedades ou de configuração
+ Tanto as usadas no código quanto às de bibliotecas usadas
+ pode se usar -cp ou --classpath
+ 
+ - pode se ainda definir uma variável de ambiente CLASSPATH para ser o padrão para todos os projetos JAVA do sistema ou daquele user
+ - Arquivo Manifest: QUando se empacota um programa Java em um arquivo JAR, pode se especificar o classpath no arquivo Manifest, que contém
+ informações sobre conteúdo e configuração do arquivo JAR.
+ 
+ Ou java -cp home/ Teste
+ ou cd home/
+ java Teste
+ 
+ Para o VSCode instalei o Java Extension Pack
+ 
+ Usei o comando "apk search maven" para verificar se já existia um pacote maven no repositório do Alpine (SO)
+ 
+ depois, "apk install maven"
+ 
+ 
+ As we have "composer require" command to get a dependency to the project, we had "mvn dependency:get" (but is now deprecated)
+ We have "mvn dependency:copy".
+ https://maven.apache.org/plugins/maven-dependency-plugin/copy-mojo.html
+ 
+ mvn dependency:copy-dependencies -DoutputDirectory=OUTPUT_DIR
+ mvn dependency:resolve -Dartifact=com.google.code.gson:gson:2.8.8
+ 
+ It searches on https://mvnrepository.com/
+ 
+ Tentei baixar a primeira dependência com
+ mvn dependency:resolve -Dartifact=com.google.code.gson:gson:2.8.8
+ Deu este erro: Failed to execute goal org.apache.maven.plugins:maven-dependency-plugin:2.8:resolve (default-cli): Goal requires a project to execute but there is no POM in this directory (/). Please verify you invoked Maven from the correct directory
+ 
+ Para criar a estrutura básica do maven, pom.xml, pode se usar o comando:
+ 
+ mvn archetype:generate
+ 
+ ou pode se passar os parâmetros já pela própria linha de comando ao executá-lo, como:
+ *Os parâmetros que tem  o prefixo "-D" significam "Define"
+ ou seja, são parâmetros que o usuário define e passa via linha de comando ao chamar o comando, mas que serão usados durante a execução daquele comando
+ Um exemplo:
+ mvn clean install -Dmaven.test.skip=true
+ 
+ ou mvn archetype:generate -DgroupId=com.gustavo -DartifactId=myproject -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+	-DgroupId: Define o ID do grupo do projeto. Você pode personalizar isso para o ID do grupo do seu projeto.
+	-DartifactId: Define o ID do artefato do projeto. Você pode personalizar isso para o ID do seu projeto.
+	-DarchetypeArtifactId: Especifica o ID do arquétipo Maven a ser usado para criar a estrutura básica. Neste caso, estamos usando o arquétipo maven-archetype-quickstart, que é um arquétipo padrão do Maven para projetos Java.
+	-DinteractiveMode=false: Desabilita o modo interativo, para que não seja necessário confirmar manualmente cada configuração durante o processo de geração.
+	
+ *Choose a number or apply filter (format: [groupId:]artifactId, case sensitive contains): 2067
+ **Aqui é (quando não parametrizado através da linha de comando "mvn archetype:generate") o momento de definição do tipo de arquétipo (-DarchetypeArtifactId)
+ https://maven.apache.org/guides/introduction/introduction-to-archetypes.html
+	
+ Depois que ele cria o arquétipo:
+  - Navegamos até o diretório do projeto (o que contém o pom.xml)
+  - executamos a compilação "mvn compile"
+  *Neste processo de compilar, ele gera a pasta target com o código compilado
+  - Podemos testar, usando o comando "mvn test"
+  - podemos exectar usando "mvn exec:java -Dexec.mainClass="com.app.App"
+  *O caminho apontado no parâmetro definido -Dexec.mainClass é o caminho da classe principal responsável pelo bootstrap de toda a aplicação, que contém o método "main"
+  
+  
+  - Se desejar empacotar o projeto em um JAR executável, pode se executar o comando "mvn package" que criará um JAR (como se fosse um arquivo compactado) no diretório target
+  
+  - Após compilado e empacotado o projeto, pode ser executado com o seguinte comando:
+  "java -jar target/myproject-x.x.x.jar"
+  
+  - para instalar as dependências contidas no POM.xml, 
+  "mvn install"
+  
+  **Não existe comando maven para instalar uma dependência alterando automaticamente o pom.xml (como é com o composer require, por exemplo)
+  
+  **Onde o maven guarda os JARs (ou seja as bibliotecas/dependências) que ele baixa para o computador?
+  Por padrão no diretório .m2 na pasta de usuário
+  Ex.: C:\Users\SeuNomeDeUsuário\.m2\repository
+  ou /root/.m2
+  
+  Um comando para limpar esse diretório é:
+  mvn dependency:purge-local-repository
+  
+  Diferentemente do composer (PHP) que baixa geralmente para o diretório do projeto.
+  O NPM em que vc pode escolher (global - pegando de uma pasta no diretório de usuário; ou local - no diretório do projeto)
+  
+  Há alguns cenários que é interessante armazenar as dependências dentro (localmente) no projeto:
+  1- Ambientes com conectividade limitada. Para não precisar pegá-las através da rede.
+  2- Controle de versão consistente. Ao armazenar dentro do projeto, você tem controle total sobre as dependencias e versões usadas no projeto.
+  3- Ambiente de contrução isolados. Assim vc pode ter diferentes dependencias, diferentes versões para diferentes projetos. 
+  *Mas devemos cuidar para que: Não sejam versionados, não sejam compilados junto com o código, aumentando o tamanho da aplicação final.
+  
+  mvn install -Dmaven.repo.local=/caminho/para/o/diretorio/do/repositorio
+  
+  Posso também definir isso e outras coisas relacionadas ao maven e seu comportamento em um arquivo chamado settings.xml
+  que por padrão está no diretório de configuração do maven na máquina (./usr/share/java/maven-3/conf/settings.xml),
+  porém também pode ser criado localmente (dentro da pasta do projeto), sobrescrevendo somente o 
+  que é necessário, ex.:
+  <settings>
+  <localRepository>/caminho/para/o/diretorio/do/repositorio</localRepository>
+</settings>
+ Ele deve estar localizado no diretório .mvn na raiz do projeto
+ ou então, se estiver em outro lugar pode se passar o endereço específico como parâmetro:
+ "mvn install -s /endereco/do/settings.xml"
+ 
+ Então para testar, alterei a classe principal para:
+		 import org.eclipse.jetty.server.Server;
+		import org.eclipse.jetty.servlet.ServletContextHandler;
+
+		public class App {
+			public static void main(String[] args) throws Exception {
+				Server server = new Server(8090);
+
+				ServletContextHandler handler = new ServletContextHandler();
+				handler.setContextPath("/");
+				server.setHandler(handler);
+
+				server.start();
+				server.join();
+			}
+		}
+		
+	*Um servidor simples que vai escutar a porta 8090 e vai retornar
+	
+	Porém ao testar não acessava, dava o erro ERR_CONNECTION_REFUSED
+	pois o client não estava conseguindo acesso com o endereço desejado (localhost:8090)
+	
+	Foi então que lembrei que estava em um container docker
+	
+	para corrigir isso, fazemos o binding das portas
+	
+	Agora, voltando ao Docker:
+	
+	Melhorei o Dockerfile:
+	
+	FROM alpine:3.18
+
+	# Install dependencies
+	RUN apk add openjdk11 tzdata curl git zip unzip bash maven
+	
+	E vamos rodar dele
+	
+	docker build -t myjavaproject .
+	
+	docker run -it -v C:/Users/MEC/projetos/automatedtests/selenium:/home -p 8090:8090 myjavaproject
+	
+	Funcionou!
+	
+	Por último, criei meu próprio servidor sem ajuda de bibliotecas, apenas com Vanilla Java
+	
+	import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class App {
+    public static void main(String[] args) throws IOException {
+        ServerSocket serverSocket = new ServerSocket(8090);
+        System.out.println("Server started on port 8090");
+
+        while (true) {
+            Socket clientSocket = serverSocket.accept();
+            System.out.println("Client connected: " + clientSocket.getInetAddress());
+
+            // Ler a requisição do cliente
+            BufferedReader reader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+            String requestLine = reader.readLine();
+            System.out.println("Request: " + requestLine);
+
+            // Enviar a resposta ao cliente
+            PrintWriter writer = new PrintWriter(clientSocket.getOutputStream(), true);
+            writer.println("HTTP/1.1 200 OK");
+            writer.println("Content-Type: text/plain");
+            writer.println();
+            writer.println("Hello, World!");
+
+            // Fechar as conexões
+            writer.close();
+            reader.close();
+            clientSocket.close();
+        }
+    }
+}
+
+//////////////  Após isso, seguimos para projetos mais completos e complexos usando Frameworks, bibliotecas, padrões de projetos e etc
